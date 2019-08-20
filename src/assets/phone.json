@@ -1,0 +1,982 @@
+[
+    {
+        "countryCode": "BD",
+        "shortCode": "880"
+    },
+    {
+        "countryCode": "BE",
+        "shortCode": "32"
+    },
+    {
+        "countryCode": "BF",
+        "shortCode": "226"
+    },
+    {
+        "countryCode": "BG",
+        "shortCode": "359"
+    },
+    {
+        "countryCode": "BA",
+        "shortCode": "387"
+    },
+    {
+        "countryCode": "BB",
+        "shortCode": "+1-246"
+    },
+    {
+        "countryCode": "WF",
+        "shortCode": "681"
+    },
+    {
+        "countryCode": "BL",
+        "shortCode": "590"
+    },
+    {
+        "countryCode": "BM",
+        "shortCode": "+1-441"
+    },
+    {
+        "countryCode": "BN",
+        "shortCode": "673"
+    },
+    {
+        "countryCode": "BO",
+        "shortCode": "591"
+    },
+    {
+        "countryCode": "BH",
+        "shortCode": "973"
+    },
+    {
+        "countryCode": "BI",
+        "shortCode": "257"
+    },
+    {
+        "countryCode": "BJ",
+        "shortCode": "229"
+    },
+    {
+        "countryCode": "BT",
+        "shortCode": "975"
+    },
+    {
+        "countryCode": "JM",
+        "shortCode": "+1-876"
+    },
+    {
+        "countryCode": "BW",
+        "shortCode": "267"
+    },
+    {
+        "countryCode": "WS",
+        "shortCode": "685"
+    },
+    {
+        "countryCode": "BQ",
+        "shortCode": "599"
+    },
+    {
+        "countryCode": "BR",
+        "shortCode": "55"
+    },
+    {
+        "countryCode": "BS",
+        "shortCode": "+1-242"
+    },
+    {
+        "countryCode": "JE",
+        "shortCode": "+44-1534"
+    },
+    {
+        "countryCode": "BY",
+        "shortCode": "375"
+    },
+    {
+        "countryCode": "BZ",
+        "shortCode": "501"
+    },
+    {
+        "countryCode": "RU",
+        "shortCode": "7"
+    },
+    {
+        "countryCode": "RW",
+        "shortCode": "250"
+    },
+    {
+        "countryCode": "RS",
+        "shortCode": "381"
+    },
+    {
+        "countryCode": "TL",
+        "shortCode": "670"
+    },
+    {
+        "countryCode": "RE",
+        "shortCode": "262"
+    },
+    {
+        "countryCode": "TM",
+        "shortCode": "993"
+    },
+    {
+        "countryCode": "TJ",
+        "shortCode": "992"
+    },
+    {
+        "countryCode": "RO",
+        "shortCode": "40"
+    },
+    {
+        "countryCode": "TK",
+        "shortCode": "690"
+    },
+    {
+        "countryCode": "GW",
+        "shortCode": "245"
+    },
+    {
+        "countryCode": "GU",
+        "shortCode": "+1-671"
+    },
+    {
+        "countryCode": "GT",
+        "shortCode": "502"
+    },
+    {
+        "countryCode": "GR",
+        "shortCode": "30"
+    },
+    {
+        "countryCode": "GQ",
+        "shortCode": "240"
+    },
+    {
+        "countryCode": "GP",
+        "shortCode": "590"
+    },
+    {
+        "countryCode": "JP",
+        "shortCode": "81"
+    },
+    {
+        "countryCode": "GY",
+        "shortCode": "592"
+    },
+    {
+        "countryCode": "GG",
+        "shortCode": "+44-1481"
+    },
+    {
+        "countryCode": "GF",
+        "shortCode": "594"
+    },
+    {
+        "countryCode": "GE",
+        "shortCode": "995"
+    },
+    {
+        "countryCode": "GD",
+        "shortCode": "+1-473"
+    },
+    {
+        "countryCode": "GB",
+        "shortCode": "44"
+    },
+    {
+        "countryCode": "GA",
+        "shortCode": "241"
+    },
+    {
+        "countryCode": "SV",
+        "shortCode": "503"
+    },
+    {
+        "countryCode": "GN",
+        "shortCode": "224"
+    },
+    {
+        "countryCode": "GM",
+        "shortCode": "220"
+    },
+    {
+        "countryCode": "GL",
+        "shortCode": "299"
+    },
+    {
+        "countryCode": "GI",
+        "shortCode": "350"
+    },
+    {
+        "countryCode": "GH",
+        "shortCode": "233"
+    },
+    {
+        "countryCode": "OM",
+        "shortCode": "968"
+    },
+    {
+        "countryCode": "TN",
+        "shortCode": "216"
+    },
+    {
+        "countryCode": "JO",
+        "shortCode": "962"
+    },
+    {
+        "countryCode": "HR",
+        "shortCode": "385"
+    },
+    {
+        "countryCode": "HT",
+        "shortCode": "509"
+    },
+    {
+        "countryCode": "HU",
+        "shortCode": "36"
+    },
+    {
+        "countryCode": "HK",
+        "shortCode": "852"
+    },
+    {
+        "countryCode": "HN",
+        "shortCode": "504"
+    },
+    {
+        "countryCode": "HM",
+        "shortCode": " "
+    },
+    {
+        "countryCode": "VE",
+        "shortCode": "58"
+    },
+    {
+        "countryCode": "PR",
+        "shortCode": "+1-787 and 1-939"
+    },
+    {
+        "countryCode": "PS",
+        "shortCode": "970"
+    },
+    {
+        "countryCode": "PW",
+        "shortCode": "680"
+    },
+    {
+        "countryCode": "PT",
+        "shortCode": "351"
+    },
+    {
+        "countryCode": "SJ",
+        "shortCode": "47"
+    },
+    {
+        "countryCode": "PY",
+        "shortCode": "595"
+    },
+    {
+        "countryCode": "IQ",
+        "shortCode": "964"
+    },
+    {
+        "countryCode": "PA",
+        "shortCode": "507"
+    },
+    {
+        "countryCode": "PF",
+        "shortCode": "689"
+    },
+    {
+        "countryCode": "PG",
+        "shortCode": "675"
+    },
+    {
+        "countryCode": "PE",
+        "shortCode": "51"
+    },
+    {
+        "countryCode": "PK",
+        "shortCode": "92"
+    },
+    {
+        "countryCode": "PH",
+        "shortCode": "63"
+    },
+    {
+        "countryCode": "PN",
+        "shortCode": "870"
+    },
+    {
+        "countryCode": "PL",
+        "shortCode": "48"
+    },
+    {
+        "countryCode": "PM",
+        "shortCode": "508"
+    },
+    {
+        "countryCode": "ZM",
+        "shortCode": "260"
+    },
+    {
+        "countryCode": "EH",
+        "shortCode": "212"
+    },
+    {
+        "countryCode": "EE",
+        "shortCode": "372"
+    },
+    {
+        "countryCode": "EG",
+        "shortCode": "20"
+    },
+    {
+        "countryCode": "ZA",
+        "shortCode": "27"
+    },
+    {
+        "countryCode": "EC",
+        "shortCode": "593"
+    },
+    {
+        "countryCode": "IT",
+        "shortCode": "39"
+    },
+    {
+        "countryCode": "VN",
+        "shortCode": "84"
+    },
+    {
+        "countryCode": "SB",
+        "shortCode": "677"
+    },
+    {
+        "countryCode": "ET",
+        "shortCode": "251"
+    },
+    {
+        "countryCode": "SO",
+        "shortCode": "252"
+    },
+    {
+        "countryCode": "ZW",
+        "shortCode": "263"
+    },
+    {
+        "countryCode": "SA",
+        "shortCode": "966"
+    },
+    {
+        "countryCode": "ES",
+        "shortCode": "34"
+    },
+    {
+        "countryCode": "ER",
+        "shortCode": "291"
+    },
+    {
+        "countryCode": "ME",
+        "shortCode": "382"
+    },
+    {
+        "countryCode": "MD",
+        "shortCode": "373"
+    },
+    {
+        "countryCode": "MG",
+        "shortCode": "261"
+    },
+    {
+        "countryCode": "MF",
+        "shortCode": "590"
+    },
+    {
+        "countryCode": "MA",
+        "shortCode": "212"
+    },
+    {
+        "countryCode": "MC",
+        "shortCode": "377"
+    },
+    {
+        "countryCode": "UZ",
+        "shortCode": "998"
+    },
+    {
+        "countryCode": "MM",
+        "shortCode": "95"
+    },
+    {
+        "countryCode": "ML",
+        "shortCode": "223"
+    },
+    {
+        "countryCode": "MO",
+        "shortCode": "853"
+    },
+    {
+        "countryCode": "MN",
+        "shortCode": "976"
+    },
+    {
+        "countryCode": "MH",
+        "shortCode": "692"
+    },
+    {
+        "countryCode": "MK",
+        "shortCode": "389"
+    },
+    {
+        "countryCode": "MU",
+        "shortCode": "230"
+    },
+    {
+        "countryCode": "MT",
+        "shortCode": "356"
+    },
+    {
+        "countryCode": "MW",
+        "shortCode": "265"
+    },
+    {
+        "countryCode": "MV",
+        "shortCode": "960"
+    },
+    {
+        "countryCode": "MQ",
+        "shortCode": "596"
+    },
+    {
+        "countryCode": "MP",
+        "shortCode": "+1-670"
+    },
+    {
+        "countryCode": "MS",
+        "shortCode": "+1-664"
+    },
+    {
+        "countryCode": "MR",
+        "shortCode": "222"
+    },
+    {
+        "countryCode": "IM",
+        "shortCode": "+44-1624"
+    },
+    {
+        "countryCode": "UG",
+        "shortCode": "256"
+    },
+    {
+        "countryCode": "TZ",
+        "shortCode": "255"
+    },
+    {
+        "countryCode": "MY",
+        "shortCode": "60"
+    },
+    {
+        "countryCode": "MX",
+        "shortCode": "52"
+    },
+    {
+        "countryCode": "IL",
+        "shortCode": "972"
+    },
+    {
+        "countryCode": "FR",
+        "shortCode": "33"
+    },
+    {
+        "countryCode": "IO",
+        "shortCode": "246"
+    },
+    {
+        "countryCode": "SH",
+        "shortCode": "290"
+    },
+    {
+        "countryCode": "FI",
+        "shortCode": "358"
+    },
+    {
+        "countryCode": "FJ",
+        "shortCode": "679"
+    },
+    {
+        "countryCode": "FK",
+        "shortCode": "500"
+    },
+    {
+        "countryCode": "FM",
+        "shortCode": "691"
+    },
+    {
+        "countryCode": "FO",
+        "shortCode": "298"
+    },
+    {
+        "countryCode": "NI",
+        "shortCode": "505"
+    },
+    {
+        "countryCode": "NL",
+        "shortCode": "31"
+    },
+    {
+        "countryCode": "NO",
+        "shortCode": "47"
+    },
+    {
+        "countryCode": "NA",
+        "shortCode": "264"
+    },
+    {
+        "countryCode": "VU",
+        "shortCode": "678"
+    },
+    {
+        "countryCode": "NC",
+        "shortCode": "687"
+    },
+    {
+        "countryCode": "NE",
+        "shortCode": "227"
+    },
+    {
+        "countryCode": "NF",
+        "shortCode": "672"
+    },
+    {
+        "countryCode": "NG",
+        "shortCode": "234"
+    },
+    {
+        "countryCode": "NZ",
+        "shortCode": "64"
+    },
+    {
+        "countryCode": "NP",
+        "shortCode": "977"
+    },
+    {
+        "countryCode": "NR",
+        "shortCode": "674"
+    },
+    {
+        "countryCode": "NU",
+        "shortCode": "683"
+    },
+    {
+        "countryCode": "CK",
+        "shortCode": "682"
+    },
+    {
+        "countryCode": "CI",
+        "shortCode": "225"
+    },
+    {
+        "countryCode": "CH",
+        "shortCode": "41"
+    },
+    {
+        "countryCode": "CO",
+        "shortCode": "57"
+    },
+    {
+        "countryCode": "CN",
+        "shortCode": "86"
+    },
+    {
+        "countryCode": "CM",
+        "shortCode": "237"
+    },
+    {
+        "countryCode": "CL",
+        "shortCode": "56"
+    },
+    {
+        "countryCode": "CC",
+        "shortCode": "61"
+    },
+    {
+        "countryCode": "CA",
+        "shortCode": "1"
+    },
+    {
+        "countryCode": "CG",
+        "shortCode": "242"
+    },
+    {
+        "countryCode": "CF",
+        "shortCode": "236"
+    },
+    {
+        "countryCode": "CD",
+        "shortCode": "243"
+    },
+    {
+        "countryCode": "CZ",
+        "shortCode": "420"
+    },
+    {
+        "countryCode": "CY",
+        "shortCode": "357"
+    },
+    {
+        "countryCode": "CX",
+        "shortCode": "61"
+    },
+    {
+        "countryCode": "CR",
+        "shortCode": "506"
+    },
+    {
+        "countryCode": "CW",
+        "shortCode": "599"
+    },
+    {
+        "countryCode": "CV",
+        "shortCode": "238"
+    },
+    {
+        "countryCode": "CU",
+        "shortCode": "53"
+    },
+    {
+        "countryCode": "SZ",
+        "shortCode": "268"
+    },
+    {
+        "countryCode": "SY",
+        "shortCode": "963"
+    },
+    {
+        "countryCode": "SX",
+        "shortCode": "599"
+    },
+    {
+        "countryCode": "KG",
+        "shortCode": "996"
+    },
+    {
+        "countryCode": "KE",
+        "shortCode": "254"
+    },
+    {
+        "countryCode": "SS",
+        "shortCode": "211"
+    },
+    {
+        "countryCode": "SR",
+        "shortCode": "597"
+    },
+    {
+        "countryCode": "KI",
+        "shortCode": "686"
+    },
+    {
+        "countryCode": "KH",
+        "shortCode": "855"
+    },
+    {
+        "countryCode": "KN",
+        "shortCode": "+1-869"
+    },
+    {
+        "countryCode": "KM",
+        "shortCode": "269"
+    },
+    {
+        "countryCode": "ST",
+        "shortCode": "239"
+    },
+    {
+        "countryCode": "SK",
+        "shortCode": "421"
+    },
+    {
+        "countryCode": "KR",
+        "shortCode": "82"
+    },
+    {
+        "countryCode": "SI",
+        "shortCode": "386"
+    },
+    {
+        "countryCode": "KP",
+        "shortCode": "850"
+    },
+    {
+        "countryCode": "KW",
+        "shortCode": "965"
+    },
+    {
+        "countryCode": "SN",
+        "shortCode": "221"
+    },
+    {
+        "countryCode": "SM",
+        "shortCode": "378"
+    },
+    {
+        "countryCode": "SL",
+        "shortCode": "232"
+    },
+    {
+        "countryCode": "SC",
+        "shortCode": "248"
+    },
+    {
+        "countryCode": "KZ",
+        "shortCode": "7"
+    },
+    {
+        "countryCode": "KY",
+        "shortCode": "+1-345"
+    },
+    {
+        "countryCode": "SG",
+        "shortCode": "65"
+    },
+    {
+        "countryCode": "SE",
+        "shortCode": "46"
+    },
+    {
+        "countryCode": "SD",
+        "shortCode": "249"
+    },
+    {
+        "countryCode": "DO",
+        "shortCode": "+1-809 and 1-829"
+    },
+    {
+        "countryCode": "DM",
+        "shortCode": "+1-767"
+    },
+    {
+        "countryCode": "DJ",
+        "shortCode": "253"
+    },
+    {
+        "countryCode": "DK",
+        "shortCode": "45"
+    },
+    {
+        "countryCode": "VG",
+        "shortCode": "+1-284"
+    },
+    {
+        "countryCode": "DE",
+        "shortCode": "49"
+    },
+    {
+        "countryCode": "YE",
+        "shortCode": "967"
+    },
+    {
+        "countryCode": "DZ",
+        "shortCode": "213"
+    },
+    {
+        "countryCode": "US",
+        "shortCode": "1"
+    },
+    {
+        "countryCode": "UY",
+        "shortCode": "598"
+    },
+    {
+        "countryCode": "YT",
+        "shortCode": "262"
+    },
+    {
+        "countryCode": "UM",
+        "shortCode": "1"
+    },
+    {
+        "countryCode": "LB",
+        "shortCode": "961"
+    },
+    {
+        "countryCode": "LC",
+        "shortCode": "+1-758"
+    },
+    {
+        "countryCode": "LA",
+        "shortCode": "856"
+    },
+    {
+        "countryCode": "TV",
+        "shortCode": "688"
+    },
+    {
+        "countryCode": "TW",
+        "shortCode": "886"
+    },
+    {
+        "countryCode": "TT",
+        "shortCode": "+1-868"
+    },
+    {
+        "countryCode": "TR",
+        "shortCode": "90"
+    },
+    {
+        "countryCode": "LK",
+        "shortCode": "94"
+    },
+    {
+        "countryCode": "LI",
+        "shortCode": "423"
+    },
+    {
+        "countryCode": "LV",
+        "shortCode": "371"
+    },
+    {
+        "countryCode": "TO",
+        "shortCode": "676"
+    },
+    {
+        "countryCode": "LT",
+        "shortCode": "370"
+    },
+    {
+        "countryCode": "LU",
+        "shortCode": "352"
+    },
+    {
+        "countryCode": "LR",
+        "shortCode": "231"
+    },
+    {
+        "countryCode": "LS",
+        "shortCode": "266"
+    },
+    {
+        "countryCode": "TH",
+        "shortCode": "66"
+    },
+    {
+        "countryCode": "TG",
+        "shortCode": "228"
+    },
+    {
+        "countryCode": "TD",
+        "shortCode": "235"
+    },
+    {
+        "countryCode": "TC",
+        "shortCode": "+1-649"
+    },
+    {
+        "countryCode": "LY",
+        "shortCode": "218"
+    },
+    {
+        "countryCode": "VA",
+        "shortCode": "379"
+    },
+    {
+        "countryCode": "VC",
+        "shortCode": "+1-784"
+    },
+    {
+        "countryCode": "AE",
+        "shortCode": "971"
+    },
+    {
+        "countryCode": "AD",
+        "shortCode": "376"
+    },
+    {
+        "countryCode": "AG",
+        "shortCode": "+1-268"
+    },
+    {
+        "countryCode": "AF",
+        "shortCode": "93"
+    },
+    {
+        "countryCode": "AI",
+        "shortCode": "+1-264"
+    },
+    {
+        "countryCode": "VI",
+        "shortCode": "+1-340"
+    },
+    {
+        "countryCode": "IS",
+        "shortCode": "354"
+    },
+    {
+        "countryCode": "IR",
+        "shortCode": "98"
+    },
+    {
+        "countryCode": "AM",
+        "shortCode": "374"
+    },
+    {
+        "countryCode": "AL",
+        "shortCode": "355"
+    },
+    {
+        "countryCode": "AO",
+        "shortCode": "244"
+    },
+    {
+        "countryCode": "AS",
+        "shortCode": "+1-684"
+    },
+    {
+        "countryCode": "AR",
+        "shortCode": "54"
+    },
+    {
+        "countryCode": "AU",
+        "shortCode": "61"
+    },
+    {
+        "countryCode": "AT",
+        "shortCode": "43"
+    },
+    {
+        "countryCode": "AW",
+        "shortCode": "297"
+    },
+    {
+        "countryCode": "IN",
+        "shortCode": "+91"
+    },
+    {
+        "countryCode": "AX",
+        "shortCode": "+358-18"
+    },
+    {
+        "countryCode": "AZ",
+        "shortCode": "994"
+    },
+    {
+        "countryCode": "IE",
+        "shortCode": "353"
+    },
+    {
+        "countryCode": "ID",
+        "shortCode": "62"
+    },
+    {
+        "countryCode": "UA",
+        "shortCode": "380"
+    },
+    {
+        "countryCode": "QA",
+        "shortCode": "974"
+    },
+    {
+        "countryCode": "MZ",
+        "shortCode": "258"
+    }
+]

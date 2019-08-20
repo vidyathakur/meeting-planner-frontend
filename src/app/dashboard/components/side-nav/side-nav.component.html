@@ -1,0 +1,39 @@
+<mat-sidenav-container class="app-sidenav-container"  style="margin-top: -18px;"> 
+  <mat-sidenav class="app-sidenav mat-elevation-z10"
+   [opened] ="!isScreenSmall()"
+   [mode] ="isScreenSmall() ? 'over' : 'side'"
+   #sidenav>
+   <mat-toolbar color="accent">Dashboard</mat-toolbar>
+   <mat-nav-list>
+   <a mat-list-item [routerLink]=[link.url] *ngFor="let link of links"> {{ link.name }} </a>
+    <!--<a class="navbar-brand text-black">
+            {{userInfo.firstName}} {{userInfo.lastName}}
+            <i class="online" *ngIf="disconnectedSocket == false"></i>
+            <i class="offline" *ngIf="disconnectedSocket == true"></i>
+          </a>-->
+ <!--<h6> Online Users:</h6>-->
+      <ul class="list">
+  
+   <h6> Online Users:</h6>
+  
+  <li class="clearfix cursorPointer " [ngClass]="{'activeChat': user.chating == true}" *ngFor="let user of users">
+    <div class="userPresence  " *ngIf="user.name.fullName != receiverName">
+
+      <!-- code to display individual users -->
+
+      {{user.name.fullName}}
+
+      <!-- code to display individual users -->
+    </div>
+  </li>
+
+</ul>
+</mat-nav-list>
+  </mat-sidenav>
+  <div class="app-sidenav-content">
+      <app-toolbar (toggleSidenav) = "sidenav.toggle()"></app-toolbar>
+     <div class="wrapper">
+       <router-outlet></router-outlet>
+     </div>
+  </div>
+</mat-sidenav-container>

@@ -1,0 +1,41 @@
+
+
+
+<mat-card>
+    <div class="col-md-12">
+  <input type="text" #myInput [(ngModel)]="firstName" style="width: 33%;height: 40px; margin-left:10px;" placeholder="Search..." (input)="search()">
+    </div>
+    <br>
+    <div style="overflow-x:auto;">
+    <table class="table table-bordered" >
+                <thead>
+                    <tr >
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr  style="cursor: pointer;" *ngFor="let userlist of users | paginate: config" >
+                        <td  (click)="editBtnHandler(userlist.userId)">{{userlist.firstName}}</td>
+                        <td>{{userlist.lastName}}</td>
+                        <td>{{userlist.email}}</td>
+                        <td>+{{userlist.CountryCode}}   {{userlist.mobileNumber}}</td>
+                        <td>
+						
+                            <a class="edit" title="Edit" data-toggle="tooltip" (click)="editBtnHandler(userlist.userId)" ><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip" (click)="deleteThisUser(userlist.userId)" ><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                        
+                    </tr>
+                
+                </tbody>
+            </table>
+    </div>
+    
+ <pagination-controls (pageChange)="pageChange($event)" class="my-pagination"></pagination-controls>
+<mat-card>
+
+  <!--[routerLink]="[userlist.userId]"-->

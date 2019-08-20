@@ -1,0 +1,46 @@
+ <div class="container">
+        <div class="row">
+          <!--<mat-spinner color="accent"></mat-spinner>-->
+			<div class="col-md-5 mx-auto">
+			<div id="first" style="padding-top:4.2rem;">
+				<div class="myform form ">
+					 <div class="logo mb-3">
+						 <div class="col-md-12 text-center">
+							<h1>Meeting Planner</h1>
+						 </div>
+					</div>
+                  
+                           <div class="form-group">
+                              <label for="inputEmail">Email </label>
+                              <input type="email" [(ngModel)]="email"  class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                           </div>
+                           <div class="form-group">
+                              <label for="inputPassword">Password</label>
+                              <input type="password"  id="inputPassword" [(ngModel)]="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                           </div>
+                          
+                           <div class="col-md-12 text-center ">
+                              <button type="button" (click)="signinFunction()" class=" btn btn-block mybtn btn-primary tx-tfm">Sign in</button>
+                           </div>
+                           <br>
+                            <div class="col-md-12 text-center ">
+                           <a  routerLink="" (click)="forgotpassHandler()">forgot password</a>
+                           </div>
+                           <div class="col-md-12 ">
+                              <div class="login-or">
+                                 <hr class="hr-or">
+                                 <span class="span-or">or</span>
+                              </div>
+                           </div>
+                           
+                           <div class="form-group">
+                              <p class="text-center">Don't have account? <a [routerLink]="" (click)="goToSignUp()" id="signup">Sign up here</a></p>
+                           </div>
+                       
+                 
+				</div>
+			</div>
+			 
+		</div>
+      </div>  
+      </div>  

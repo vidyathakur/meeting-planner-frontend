@@ -1,0 +1,240 @@
+<div class="container-fluid">
+  <div class="col-md-12">
+    <div class="btn btn-primary" (click)="openXl(content)">Create Meetings</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <div id="first">
+        <div class="myform form ">
+          <div class="logo mb-3">
+            <div class="col-md-12 text-center">
+              <h1>Users Details</h1>
+            </div>
+          </div>
+          <form [formGroup]="myForm">
+            <!--<input type="hidden"    value="{{ currentUser.userId }}"  formControlName="userId">-->
+            <div class="form-group">
+              <label for="inputFirstName">Firstname</label>
+              <input type="text" [(ngModel)]="currentUser.firstName" formControlName="firstName" class="form-control" aria-describedby="firstHelp"
+                placeholder="Enter Firstname" required>
+            </div>
+            <div class="form-group">
+              <label for="inputLastName">Lastname</label>
+              <input type="text" [(ngModel)]="currentUser.lastName" formControlName="lastName" class="form-control" aria-describedby="lastHelp"
+                placeholder="Enter Lastname" required>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email </label>
+              <input type="email" [(ngModel)]="currentUser.email" formControlName="email" class="form-control" aria-describedby="emailHelp"
+                placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="inputMobile">Mobile</label>
+              <input type="number" [(ngModel)]="currentUser.mobileNumber" formControlName="mobileNumber" class="form-control" aria-describedby="mobileHelp"
+                placeholder="Enter mobile" required>
+            </div>
+            <div class="col-md-12 text-center mb-3">
+              <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm" (click)="editThisUser(currentUser.userId)">update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="btn-group">
+            <div class="btn btn-primary" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate" (viewDateChange)="closeOpenMonthViewDay()">
+              Previous
+            </div>
+            <div class="btn btn-outline-secondary" mwlCalendarToday [(viewDate)]="viewDate">
+              Today
+            </div>
+            <div class="btn btn-primary" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate" (viewDateChange)="closeOpenMonthViewDay()">
+              Next
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
+        </div>
+        <div class="col-md-4">
+          <div class="btn-group">
+            <div class="btn btn-primary" (click)="setView(CalendarView.Month)" [class.active]="view === CalendarView.Month">
+              Month
+            </div>
+            <div class="btn btn-primary" (click)="setView(CalendarView.Week)" [class.active]="view === CalendarView.Week">
+              Week
+            </div>
+            <div class="btn btn-primary" (click)="setView(CalendarView.Day)" [class.active]="view === CalendarView.Day">
+              Day
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div [ngSwitch]="view">
+        <mwl-calendar-month-view *ngSwitchCase="CalendarView.Month" [viewDate]="viewDate" [events]="events" [refresh]="refresh" [activeDayIsOpen]="activeDayIsOpen"
+          (dayClicked)="dayClicked($event.day)" (eventClicked)="handleEvent('Clicked', $event.event)" (eventTimesChanged)="eventTimesChanged($event)">
+        </mwl-calendar-month-view>
+        <mwl-calendar-week-view *ngSwitchCase="CalendarView.Week" [viewDate]="viewDate" [events]="events" [refresh]="refresh" (eventClicked)="handleEvent('Clicked', $event.event)"
+          (eventTimesChanged)="eventTimesChanged($event)">
+        </mwl-calendar-week-view>
+        <mwl-calendar-day-view *ngSwitchCase="CalendarView.Day" [viewDate]="viewDate" [events]="events" [refresh]="refresh" (eventClicked)="handleEvent('Clicked', $event.event)"
+          (eventTimesChanged)="eventTimesChanged($event)">
+        </mwl-calendar-day-view>
+      </div>
+      <!-- Everything you see below is just for the demo, you don't need to include it in your app -->
+      <ng-template #content let-modal>
+        <form #createEventForm="ngForm" novalidate (ngSubmit)="createEvent()">
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Edit events</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <div class="clearfix"></div>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <th>Title</th>
+                    <td>
+                      <input type="text" name="title" [(ngModel)]="title" #eventTitle="ngModel" class="form-control" (keyup)="refresh.next()" required
+                      />
+                      <mat-error *ngIf="createEventForm.controls.title.invalid && createEventForm.controls.title.touched"> Title is required</mat-error>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>Description</th>
+                    <td>
+                      <input type="text" name="description" [(ngModel)]="description" #eventDescription="ngModel" class="form-control" (keyup)="refresh.next()"
+                        required />
+                      <mat-error *ngIf="createEventForm.controls.description.invalid && createEventForm.controls.description.touched"> Description is required</mat-error>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Meeting With</th>
+                    <td>
+                      <input type="text" name="meetingWith" [(ngModel)]="meetingWith" #eventMeeting="ngModel" class="form-control" (keyup)="refresh.next()"
+                        required />
+                      <mat-error *ngIf="createEventForm.controls.meetingWith.invalid && createEventForm.controls.meetingWith.touched"> meetingWith is required</mat-error>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Meeting Place</th>
+                    <td>
+                      <input type="text" name="meetingPlace" [(ngModel)]="meetingPlace" #eventMeetplace="ngModel" class="form-control" (keyup)="refresh.next()"
+                        required />
+                      <mat-error *ngIf="createEventForm.controls.meetingPlace.invalid && createEventForm.controls.meetingPlace.touched"> meetingPlace is required</mat-error>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Starts at</th>
+                    <td>
+                      <input type="text" mwlFlatpickr name="startTime" [(ngModel)]="startTime" #startEventTime="ngModel" (ngModelChange)="refresh.next()"
+                        [altInput]="true" [convertModelValue]="true" [enableTime]="true" dateFormat="Y-m-dTH:i" altFormat="F j, Y H:i"
+                        placeholder="Not set" required class="form-control" />
+                      <mat-error *ngIf="createEventForm.controls.startTime.invalid && createEventForm.controls.startTime.touched"> startTime is required</mat-error>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Ends at</th>
+                    <td>
+                      <input class="form-control" type="text" mwlFlatpickr name="endTime" [(ngModel)]="endTime" #endEventTime="ngModel" (ngModelChange)="refresh.next()"
+                        [altInput]="true" [convertModelValue]="true" [enableTime]="true" dateFormat="Y-m-dTH:i" altFormat="F j, Y H:i"
+                        placeholder="Not set" required />
+                      <mat-error *ngIf="createEventForm.controls.endTime.invalid && createEventForm.controls.endTime.touched"> endTime is required</mat-error>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit" [disabled]="!createEventForm.form.valid">Add new</button>
+          </div>
+        </form>
+      </ng-template>
+      <pre>{{closeResult}}</pre>
+    </div>
+  </div>
+</div>
+<ng-template #modalContent let-close="close">
+  <form #editEventForm="ngForm" novalidate (ngSubmit)="editThisEvent()">
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Edit events</h4>
+            <button type="button" class="close" (click)="close()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="clearfix"></div>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <th>Title</th>
+                    <td>
+                      <input type="text" name="title" [(ngModel)]="modalData?.event.title" #eventTitle="ngModel" class="form-control" (keyup)="refresh.next()" required
+                      />
+                      <input type="hidden" name="meetId" [(ngModel)]="modalData?.event.meetId" #eventmeetId="ngModel" class="form-control" (keyup)="refresh.next()"
+  required />
+  
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Description</th>
+                    <td>
+                      <input type="text" name="description" [(ngModel)]="modalData?.event.description" #eventDescription="ngModel" class="form-control" (keyup)="refresh.next()"
+                        required />
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Meeting With</th>
+                    <td>
+                      <input type="text" name="meetingWith" [(ngModel)]="modalData?.event.meetingWith" #eventMeeting="ngModel" class="form-control" (keyup)="refresh.next()"
+                        required />
+                     
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Meeting Place</th>
+                    <td>
+                      <input type="text" name="meetingPlace" [(ngModel)]="modalData?.event.meetingPlace" #eventMeetplace="ngModel" class="form-control" (keyup)="refresh.next()"
+                        required />
+                     
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Starts at</th>
+                    <td>
+                      <input type="text" mwlFlatpickr name="startTime" [(ngModel)]="modalData?.event.startTime" #startEventTime="ngModel" (ngModelChange)="refresh.next()"
+                        [altInput]="true" [convertModelValue]="true" [enableTime]="true" dateFormat="Y-m-dTH:i" altFormat="F j, Y H:i"
+                        placeholder="Not set" required class="form-control" />
+                     
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Ends at</th>
+                    <td>
+                      <input class="form-control" type="text" mwlFlatpickr name="endTime" [(ngModel)]="modalData?.event.endTime" #endEventTime="ngModel" (ngModelChange)="refresh.next()"
+                        [altInput]="true" [convertModelValue]="true" [enableTime]="true" dateFormat="Y-m-dTH:i" altFormat="F j, Y H:i"
+                        placeholder="Not set" required />
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit" [disabled]="!editEventForm.form.valid">Update</button>
+          </div>
+        </form>
+</ng-template>
